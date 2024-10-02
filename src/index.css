@@ -166,3 +166,13 @@ button[disabled] {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
+
+button {
+  background: linear-gradient(90deg, #007bff, #28a745);
+  color: white;
+  transition: background 0.4s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #28a745, #007bff);
+}
