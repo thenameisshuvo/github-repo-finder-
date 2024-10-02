@@ -33,3 +33,49 @@
   }
 }
 
+/* Grid layout for repository cards */
+.repo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Minimum width of 250px, expands automatically */
+  gap: 20px; /* Space between cards */
+  padding: 16px;
+}
+
+.repo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  border-radius: 8px;
+  border: 2px solid rgb(0, 0, 0);
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  /* Adjust for tablets */
+  .repo-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Reduce card size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust for mobile */
+  body {
+    padding: 0 10px;
+  }
+
+  .repo-card {
+    padding: 16px;
+    text-align: center;
+  }
+
+  .repo-card h3 {
+    font-size: 16px;
+  }
+
+  .repo-icon {
+    flex-direction: column;
+  }
+}
