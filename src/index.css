@@ -157,3 +157,12 @@ button[disabled] {
   opacity: 0.6;
 
 }
+
+.repo-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.repo-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
